@@ -18,7 +18,7 @@ CuratedX combines strategy, design, and development to help brands stand out onl
 
 ## Contact
 
-Email: hello@curatedx.com
+Email: support@curatedx.io
 
 ---
 
