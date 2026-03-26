@@ -1,8 +1,25 @@
-# CuratedX GitHub Pages Site
+# CuratedX
 
-Simple static company landing page for GitHub Pages.
+We design and build clean, high-performing company websites.
 
-## Files
+CuratedX combines strategy, design, and development to help brands stand out online.
 
-- `index.html` - main page content
-- `styles.css` - page styling
+## What We Do
+
+- Website Design
+- Frontend Development
+- Brand Refresh
+
+## Why CuratedX
+
+- Fast, modern, responsive websites
+- Clear messaging and polished visuals
+- Built for performance and accessibility
+
+## Contact
+
+Email: hello@curatedx.com
+
+---
+
+Website: [https://curatedx0.github.io/curatedx.github.io-/](https://curatedx0.github.io/curatedx.github.io-/)
