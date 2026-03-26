@@ -1,6 +1,6 @@
 # CuratedX
 
-We design and build clean, high-performing company websites.
+We build and distribute web/mobile apps.
 
 CuratedX combines strategy, design, and development to help brands stand out online.
 
