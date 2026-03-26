@@ -1,0 +1,115 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --brand: #22c55e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: #020617;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  background: radial-gradient(circle at top right, #1e293b, var(--bg));
+  padding: 1.25rem 1.25rem 3.5rem;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: var(--brand);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  max-width: 14ch;
+}
+
+.lead {
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.6rem;
+  background: var(--brand);
+  color: #052e16;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #1f2937;
+  border-radius: 0.85rem;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.contact a {
+  color: var(--brand);
+}
+
+.footer {
+  border-top: 1px solid #1f2937;
+  color: var(--muted);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
