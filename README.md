@@ -23,3 +23,10 @@ Email: support@curatedx.io
 ---
 
 Website: [https://curatedx0.github.io/curatedx.github.io-/](https://curatedx0.github.io/curatedx.github.io-/)
+
+## CleanTool checkout landing page
+
+The live dedicated CleanTool landing page lives at
+[https://www.curatedx.io/cleantool/](https://www.curatedx.io/cleantool/). It
+uses PromoKit affiliate-link tracking with Stripe Payment Link checkout. See
+[`cleantool/README.md`](./cleantool/README.md) for its maintenance notes.
