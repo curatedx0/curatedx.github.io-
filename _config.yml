@@ -1,0 +1,5 @@
+# GitHub Pages/Jekyll ignores dot-directories unless they are explicitly included.
+# Apple fetches this association file from /.well-known during Universal Link
+# verification, so it must be present in the published site artifact.
+include:
+  - .well-known
