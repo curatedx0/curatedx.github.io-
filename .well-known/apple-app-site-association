@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "4HCX2QRDA7.com.cleantool.app",
+        "paths": [
+          "/cleantool/gmail-oauth-return*"
+        ]
+      }
+    ]
+  }
+}
