@@ -1,8 +1,8 @@
-# CleanTool checkout landing page
+# CleanTool product landing page
 
-This folder is a self-contained GitHub Pages landing page for CleanTool. It is
-separate from the general CuratedX company homepage so an affiliate link has a
-clear, focused destination:
+This folder contains the public product landing page for CleanTool. The site
+root forwards here while keeping a visitor's referral query parameters, so this
+is the single design and checkout source of truth:
 
 `https://www.curatedx.io/cleantool/`
 
@@ -13,9 +13,10 @@ clear, focused destination:
    start with `https://buy.stripe.com/`.
 2. Keep the PromoKit script in `index.html`. Its supplied project identifier is
    already configured there.
-3. In PromoKit, make the campaign website URL exactly
-   `https://www.curatedx.io/cleantool/`. Test an affiliate link only on the
-   deployed page, not on localhost.
+3. In PromoKit, use `https://www.curatedx.io/` as the campaign website URL.
+   The root forwards visitors to this page while preserving their referral
+   query parameters. Test an affiliate link only on the deployed page, not on
+   localhost.
 4. When a visitor arrives through a PromoKit affiliate link,
    `checkout.js` adds PromoKit's referral value to Stripe as
    `client_reference_id` before the visitor goes to Checkout.

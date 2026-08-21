@@ -1,32 +1,14 @@
-# CuratedX
+# CleanTool website
 
-We build and distribute web/mobile apps.
+This repository is the source of truth for the public CleanTool website.
 
-CuratedX combines strategy, design, and development to help brands stand out online.
+The root address forwards visitors to the product landing page at
+[`/cleantool/`](./cleantool/), preserving referral query parameters. The
+dedicated Gmail OAuth return page and Apple Universal Link association remain
+hosted at their existing paths.
 
-## What We Do
+## Checkout and referral tracking
 
-- Website Design
-- Frontend Development
-- Brand Refresh
-
-## Why CuratedX
-
-- Fast, modern, responsive websites
-- Clear messaging and polished visuals
-- Built for performance and accessibility
-
-## Contact
-
-Email: support@curatedx.io
-
----
-
-Website: [https://curatedx0.github.io/curatedx.github.io-/](https://curatedx0.github.io/curatedx.github.io-/)
-
-## CleanTool checkout landing page
-
-The live dedicated CleanTool landing page lives at
-[https://www.curatedx.io/cleantool/](https://www.curatedx.io/cleantool/). It
-uses PromoKit affiliate-link tracking with Stripe Payment Link checkout. See
-[`cleantool/README.md`](./cleantool/README.md) for its maintenance notes.
+The product page uses PromoKit affiliate-link tracking with a Stripe Payment
+Link checkout. See [`cleantool/README.md`](./cleantool/README.md) before
+changing the checkout implementation.

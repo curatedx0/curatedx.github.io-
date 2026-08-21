@@ -47,7 +47,7 @@ function updateCheckoutLinks() {
     button.href = checkoutUrl;
     button.classList.remove("button--disabled");
     button.removeAttribute("aria-disabled");
-    button.textContent = "Continue to secure checkout";
+    button.textContent = "Start 3-day free trial";
   });
 
   if (checkoutStatus) {
