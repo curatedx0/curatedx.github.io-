@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Securely manage a CleanTool web subscription through Stripe."
+    />
+    <meta name="theme-color" content="#f7f7f1" />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href="https://www.curatedx.io/cleantool/manage-subscription/" />
+    <title>Manage subscription — CleanTool</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./manage-subscription.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to subscription management</a>
+
+    <div class="page-shell">
+      <header class="site-header page-width">
+        <a class="brand" href="../" aria-label="CleanTool home">
+          <span class="brand-mark" aria-hidden="true">ct</span>
+          <span>CleanTool</span>
+        </a>
+        <a class="back-link" href="../"><span aria-hidden="true">←</span> Back to CleanTool</a>
+      </header>
+
+      <main id="main-content" class="manage-main page-width">
+        <section class="manage-card" aria-labelledby="manage-title">
+          <p class="eyebrow"><span aria-hidden="true">01</span> WEB MEMBERSHIP</p>
+          <h1 id="manage-title">Manage your subscription</h1>
+          <p class="intro">
+            If you purchased CleanTool Pro on the web, enter the email address you used at checkout. Continue to
+            Stripe, then check your email for a secure link from Stripe to manage your subscription.
+          </p>
+
+          <form id="manage-subscription-form" class="manage-form" novalidate>
+            <label for="subscription-email">Email</label>
+            <input
+              id="subscription-email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              spellcheck="false"
+              required
+              disabled
+            />
+            <button id="manage-subscription-submit" class="submit-button" type="submit" disabled>
+              Continue
+            </button>
+            <p id="manage-subscription-status" class="form-status" role="status" aria-live="polite">
+              The secure subscription portal is being configured.
+            </p>
+          </form>
+
+          <aside class="purchase-note" aria-label="Purchase type note">
+            <p>
+              <strong>Purchased through Apple?</strong> Manage that subscription through your Apple ID subscription
+              settings.
+            </p>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer page-width">
+        <a class="brand brand--footer" href="../" aria-label="CleanTool home">
+          <span class="brand-mark" aria-hidden="true">ct</span>
+          <span>CleanTool</span>
+        </a>
+        <p>Web subscriptions are securely managed by Stripe.</p>
+        <a href="mailto:support@curatedx.io">Need help?</a>
+      </footer>
+    </div>
+
+    <noscript>
+      <p class="noscript-message">
+        JavaScript is required to continue securely to Stripe. Please enable it and try again, or email
+        <a href="mailto:support@curatedx.io">support@curatedx.io</a>.
+      </p>
+    </noscript>
+  </body>
+</html>
