@@ -275,9 +275,19 @@ h1 {
   text-align: center;
 }
 
-.site-footer > a:last-child {
-  justify-self: end;
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.footer-legal a {
   text-decoration: none;
+}
+
+.site-footer > .footer-legal {
+  justify-self: end;
 }
 
 .noscript-message {
@@ -332,8 +342,12 @@ h1 {
     text-align: left;
   }
 
-  .site-footer > a:last-child {
+  .site-footer > .footer-legal {
     justify-self: start;
+  }
+
+  .footer-legal {
+    justify-content: flex-start;
   }
 }
 

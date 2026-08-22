@@ -476,7 +476,18 @@ h3 {
   text-decoration: none;
 }
 
-.site-footer > a:last-child {
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.footer-legal a {
+  color: var(--text-3);
+}
+
+.site-footer > .footer-legal {
   justify-self: end;
 }
 
@@ -575,8 +586,12 @@ h3 {
     text-align: left;
   }
 
-  .site-footer > a:last-child {
+  .site-footer > .footer-legal {
     justify-self: start;
+  }
+
+  .footer-legal {
+    justify-content: flex-start;
   }
 }
 

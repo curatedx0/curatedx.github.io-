@@ -7,6 +7,9 @@ The root address forwards visitors to the product landing page at
 dedicated Gmail OAuth return page and Apple Universal Link association remain
 hosted at their existing paths.
 
+The public legal pages used by the mobile app and Google OAuth consent screen
+are available at [`/privacy/`](./privacy/) and [`/terms/`](./terms/).
+
 ## Checkout and referral tracking
 
 The product page uses PromoKit affiliate-link tracking with a Stripe Payment

@@ -1,0 +1,298 @@
+:root {
+  color-scheme: light;
+  --canvas: #f7f7f1;
+  --canvas-soft: #eff1eb;
+  --ink: #111210;
+  --muted: #61685f;
+  --subtle: #858c82;
+  --line: #d8ddd4;
+  --line-strong: #c3cac0;
+  --accent: #08783c;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--canvas);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(8, 120, 60, 0.08), transparent 24rem),
+    var(--canvas);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.7rem 0.9rem;
+  color: var(--canvas);
+  background: var(--ink);
+  text-decoration: none;
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.page-width {
+  width: min(920px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  min-height: 6.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.71rem;
+  font-weight: 700;
+  letter-spacing: -0.12em;
+}
+
+.back-link {
+  color: var(--muted);
+  font-size: 0.76rem;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible,
+.site-footer a:hover,
+.site-footer a:focus-visible,
+.prose a:hover,
+.prose a:focus-visible {
+  color: var(--accent);
+}
+
+.back-link span {
+  margin-right: 0.35rem;
+}
+
+.legal-main {
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.eyebrow {
+  margin: 0 0 1.35rem;
+  color: var(--subtle);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+}
+
+.eyebrow span {
+  margin-right: 0.55rem;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+}
+
+h1 {
+  max-width: 14ch;
+  margin-bottom: 1.35rem;
+  font-size: clamp(2.85rem, 6.6vw, 5.35rem);
+  line-height: 0.93;
+}
+
+h2 {
+  margin: 3.2rem 0 1rem;
+  padding-top: 0.3rem;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 1.05;
+}
+
+h3 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.intro {
+  max-width: 44rem;
+  margin-bottom: 2.75rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.17rem);
+  letter-spacing: -0.035em;
+}
+
+.updated {
+  display: inline-block;
+  margin: 0;
+  padding: 0.62rem 0.78rem;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 0.72rem;
+}
+
+.prose {
+  max-width: 48rem;
+  margin-top: 3.5rem;
+}
+
+.prose p,
+.prose li {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.prose strong {
+  color: var(--ink);
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.prose ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.prose li + li {
+  margin-top: 0.45rem;
+}
+
+.notice {
+  margin-top: 2rem;
+  padding: 1.2rem 1.3rem;
+  border-left: 3px solid var(--accent);
+  background: var(--canvas-soft);
+}
+
+.notice p {
+  margin: 0;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 9rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.brand--footer {
+  font-size: 0.8rem;
+}
+
+.brand--footer .brand-mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 0.61rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1.2rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .page-width {
+    width: min(100% - 2rem, 36rem);
+  }
+
+  .site-header {
+    min-height: 5.6rem;
+  }
+
+  .back-link {
+    font-size: 0.68rem;
+  }
+
+  .legal-main {
+    padding-block: 4rem 5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 14vw, 4rem);
+  }
+
+  h2 {
+    margin-top: 2.65rem;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
